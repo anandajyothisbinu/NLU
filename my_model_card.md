@@ -51,24 +51,26 @@ The preprocessing step involves tokenising both claim and evidence sequences. Th
 <!-- This is a summary of the values of hyperparameters used in training the model. -->
 
       - batch_size: 16
-      - seed: 42
-      - num_epochs: 5
-      - num_bilstm_layers: 1   
-      - dropout_0: 0   
+      - num_epochs: 4
+      - num_bilstm_layers: 3  
+      - dropout_0: 0.2
+      - droupout_1: 0.0
+      - droupout_2: 0.0
       - lstm_units_0: 64  
-      - num_dense_layers: 1   
-      - dense_units_0: 256 
-      - dense_dropout_0: 0.3 
-      - learning_rate: 6e-4
-      - dropout_1: 0.1 
-      - lstm_units_1: 32  
+      - lstm_units_1: 32
+      - lstm_units_2: 32
+      - num_dense_layers: 1 
+      - dense_units_0: 32 
+      - dense_dropout_0: 0.4 
+      - learning_rate: 1e-3
+
 
 #### Speeds, Sizes, Times
 
 <!-- This section provides information about how roughly how long it takes to train the model and the size of the resulting model. -->
 
-      - overall training time: 9 minutes
-      - duration per training epoch: 3 minutes
+      - overall training time: 15-40 minutes
+      - duration per training epoch: 3-10 minutes
       - model size: 16.5MB
 
 ## Evaluation
@@ -86,8 +88,6 @@ A subset of the development set provided, accounting for 6K datapoints, were use
 #### Metrics
 
 <!-- These are the evaluation metrics being used. -->
-
-
       - Accuracy
       - Precision
       - Recall
@@ -105,7 +105,7 @@ Recal: 83%
 ### Hardware
 
       - RAM: at least 4 GB
-      - Storage: at least 400MB
+      - Storage: at least 100MB
       - GPU: optional
 
 ### Software
