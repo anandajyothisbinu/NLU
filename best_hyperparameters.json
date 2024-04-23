@@ -1,0 +1,1 @@
+{"num_bilstm_layers": 3, "dropout_0": 0.2, "lstm_units_0": 64, "num_dense_layers": 1, "dense_units_0": 32, "dense_dropout_0": 0.4, "learning_rate": 0.0011107930392350116, "dense_units_1": 32, "dense_dropout_1": 0.0, "dropout_1": 0.0, "lstm_units_1": 32, "dropout_2": 0.0, "lstm_units_2": 32}
